@@ -2,7 +2,7 @@
 
 void saluto()
 {
-    printf("ciao Damiano!\n");
+    printf("ciao damiano\n");
 }
 int main()
 {
