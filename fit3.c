@@ -8,15 +8,15 @@ void consigli(float peso);
 
 int main() 
 {
+    char nome[30];
+    char cognome[30];
     int eta;
     float peso;
     char sesso;
-    char nome[30];
-    char cognome[30];
     int altezza;
     int scelta;
 
-    printf("Benvenuto su fitbud! inserisci il tuo nome e cognome\n");
+    printf("Benvenuto a Fitpolis! inserisci il tuo nome e cognome\n");
     scanf(" %[^\n]s %[^\n]s", nome, cognome);
 
     
@@ -85,17 +85,48 @@ void programmaUomo(float peso, int scelta)
     printf("3. Esercizi di forza per migliorare la resistenza.\n");
    printf(" Scegli una delle tre soluzioni di allenamento\n");
    scanf("%d", &scelta);
-   if(scelta = 1 )
+   if(scelta == 1 )
    {
-    printf("");
+    printf("GIORNO A: PETTO BICIPITI\n\
+\n\
+Panca Piana o Chest Press 4×6/8\n\
+Distensioni con manubri su inclinata 4×8/10\n\
+Croci ai cavi 3×12\n\
+Curl con bilanciere 4×10\n\
+Curl ai cavi 4×12\n\
+GIORNO B: DORSO – TRICIPITI\n\
+\n\
+Trazioni 4×6/8\n\
+Lat Machine 4×10\n\
+Rematore con bilanciere 4×6/8\n\
+Low Row oPulley 4×8/10\n\
+French Press 4×10\n\
+Push Down 4×12\n\
+GIORNO C: GAMBE – SPALLE\n\
+\n\
+Leg Press 4X6/8\n\
+Affondi 3×8/10\n\
+Leg Curl 4X12\n\
+Military Press 4×6/8\n\
+Sholuder press 4×8/10\n\
+Alzate Laterali 3×12\n");
    }
-   else if(scelta = 2 )
+   else if(scelta == 2)
    {
-    printf("");
+    printf("Lunedì	5 km corsa lenta, ogni settimana punta ad incrementare la velocità\n\
+            Mercoledì	Circuito HIIT “Tabata”\n\
+           4 rnd 20” esercizio/10” rest burpees\n\
+           Obbiettivo: maggior numero di ripetizioni nei 20” / mantenere lo stesso numero di ripetizioni ad ogni round\n\
+            Sabato	15 km bicicletta velocità moderata, ogni settimana incrementa il numero dei chilometri percorsi");
    }
-   else if(scelta =. 3 )
+   else if(scelta == 3 )
    {
-    printf("");
+    printf("Gli esercizi più indicati sono i multiarticolari pesanti, tra i quali potremmo scegliere soprattutto i fondamentali\n\
+           Si prediligono esercizi con un basso numero di ripetizioni e un carico abbastanza elevato\n\
+           Back squat con bilanciere\n\
+           Distensioni in panca piana con bilanciere\n\
+           Trazioni alla sbarra (anche con sovraccarichi)\n\
+           Stacco da terra con bilanciere.\n");
    }
    }
 
@@ -112,258 +143,216 @@ void programmaUomo(float peso, int scelta)
   
   printf(" Scegli una delle tre soluzioni di allenamento\n");
    scanf("%d", &scelta);
-   if(scelta = 1 )
+   if(scelta == 1 )
    {
-    printf("Il workout è composto da un primo blocco di riscaldamento, 2 blocchi a circuito con esercizi di tonificazione, un ultimo blocco di defaticamento e si chiude con un po' di stretching
-    
-    Riscaldamento
-
- 
-
-20             CIRCONDUZIONE BRACCIA IN AVANTI
-
-20            CIRCONDUZIONE BRACCIA INDIETRO
-
-20             INCROCIO BRACCIA GAMBE
-
-20             SKIP ALTO
-
-20             CALCIATA AI GLUTEI LENTA
-
-20             SPOSTAMENTO LATERALE DX
-
-20             SPOSTAMENTO LATERALE SX
-
-20             JUMPING JACK
-
-20             SLANCIO ALTERNATO GAMBA DX SX
-
- 
-
-Allenamento Tonificazione A Circuito
-
- 
-
-30          INCROCIO BRACCIA GAMBE + CALCIO ALTERNATO
-
-30             GINOCCHIO SU DX
-
-30            GINOCCHIO SU SX
-
-30             PASSO INCROCIATO ALL'INDIETRO + TORSIONE TRONCO (ALTERNATO)
-
-20             RECUPERA
-
-30          DISTENSIONE BRACCIA GAMBE DX
-
-30             DISTENSIONE BRACCIA GAMBE SX
-
-30             PLANK
-
-30            PUGNI VELOCI FIT BOXE
-
-20             RECUPERA
-
-30             PUGNI VELOCI
-
-30             PLANK IN MOVIMENTO
-
-30             SUMO SQUAT
-
-30             SQUAT
-
-20             PAUSA
-
-30             INCROCIO BRACCIA GAMBE + CALCIO ALTERNATO
-
-30             GINOCCHIO SU DX
-
-30             GINOCCHIO SU SX
-
-30             PASSO INCROCIATO ALL'INDIETRO + TORSIONE TRONCO (ALTERNATO)
-
-20             RECUPERA
-
-30             DISTENSIONE BRACCIA GAMBE DX
-
-30             DISTENSIONE BRACCIA GAMBE SX
-
-30             PLANK
-
-30             PUGNI VELOCI FIT BOXE
-
-20             RECUPERA
-
-30             PUGNI VELOCI
-
-30             PLANK IN MOVIMENTO
-
-30             SUMO SQUAT
-
-30             SQUAT
-
-20             PAUSA
-
-20             SLANCIO ALTERNATO GAMBA DX SX
-
-20             JUMPING JACK
-
-20             SPOSTAMENTO LATERALE SX
-
-20             SPOSTAMENTO LATERALE DX
-
-20             CALCIATA AI GLUTEI LENTA
-
-20             SKIP ALTO
-
-20             INCROCIO BRACCIA GAMBE
-
-20             CIRCONDUZIONE BRACCIA INDIETRO
-
-20             CIRCONDUZIONE BRACCIA IN AVANTI
-
- 
-
-Stretching
-
- 
-
-20             RESPIRAZIONE
-
-20             STRETCHING GAMBA DX
-
-20             STRETCHING GAMBA SX
-
-20             INCROCIO GAMBA DX
-
-20             INCROCIO GAMBA SX
-
-20             DISCESA FRONTALE MANI A TERRA
-
-20             MOBILIZZAZIONE COLONNA\n");
+    printf("Il workout è composto da un primo blocco di riscaldamento, 2 blocchi a circuito con esercizi di tonificazione, un ultimo blocco di defaticamento e si chiude con un po' di stretching.\n\
+    Riscaldamento\n\
+\n\
+ \n\
+\n\
+20s             CIRCONDUZIONE BRACCIA IN AVANTI\n\
+\n\
+20s             CIRCONDUZIONE BRACCIA INDIETRO\n\
+\n\
+20s             INCROCIO BRACCIA GAMBE\n\
+\n\
+20s             SKIP ALTO\n\
+\n\
+20s             CALCIATA AI GLUTEI LENTA\n\
+\n\
+20s             SPOSTAMENTO LATERALE DX\n\
+\n\
+20s             SPOSTAMENTO LATERALE SX\n\
+\n\
+20s             JUMPING JACK\n\
+\n\
+20s             SLANCIO ALTERNATO GAMBA DX SX\n\
+\n\
+ \n\
+\n\
+Allenamento Tonificazione A Circuito\n\
+\n\
+ \n\
+\n\
+30s             INCROCIO BRACCIA GAMBE + CALCIO ALTERNATO\n\
+\n\
+30s             GINOCCHIO SU DX\n\
+\n\
+30s             GINOCCHIO SU SX\n\
+\n\
+30s             PASSO INCROCIATO ALL'INDIETRO + TORSIONE TRONCO (ALTERNATO)\n\
+\n\
+20s             RECUPERA\n\
+\n\
+30s             DISTENSIONE BRACCIA GAMBE DX\n\
+\n\
+30s             DISTENSIONE BRACCIA GAMBE SX\n\
+\n\
+30s             PLANK\n\
+\n\
+30s             PUGNI VELOCI FIT BOXE\n\
+\n\
+20s             RECUPERA\n\
+\n\
+30s             PUGNI VELOCI\n\
+\n\
+30s             PLANK IN MOVIMENTO\n\
+\n\
+30s             SUMO SQUAT\n\
+\n\
+30s             SQUAT\n\
+\n\
+20s             PAUSA\n\
+\n\
+30s             INCROCIO BRACCIA GAMBE + CALCIO ALTERNATO\n\
+\n\
+30s             GINOCCHIO SU DX\n\
+\n\
+30s             GINOCCHIO SU SX\n\
+\n\
+30s             PASSO INCROCIATO ALL'INDIETRO + TORSIONE TRONCO (ALTERNATO)\n\
+\n\
+20s             RECUPERA\n\
+\n\
+30s             DISTENSIONE BRACCIA GAMBE DX\n\
+\n\
+30s             DISTENSIONE BRACCIA GAMBE SX\n\
+\n\
+30s             PLANK\n\
+\n\
+30s             PUGNI VELOCI FIT BOXE\n\
+\n\
+20s             RECUPERA\n\
+\n\
+30s             PUGNI VELOCI\n\
+\n\
+30s             PLANK IN MOVIMENTO\n\
+\n\
+30s             SUMO SQUAT\n\
+\n\
+30s             SQUAT\n\
+\n\
+20s             PAUSA\n\
+\n\
+20s             SLANCIO ALTERNATO GAMBA DX SX\n\
+\n\
+20s             JUMPING JACK\n\
+\n\
+20s             SPOSTAMENTO LATERALE SX\n\
+\n\
+20s             SPOSTAMENTO LATERALE DX\n\
+\n\
+20s             CALCIATA AI GLUTEI LENTA\n\
+\n\
+20s             SKIP ALTO\n\
+\n\
+20s             INCROCIO BRACCIA GAMBE\n\
+\n\
+20s             CIRCONDUZIONE BRACCIA INDIETRO\n\
+\n\
+20s             CIRCONDUZIONE BRACCIA IN AVANTI\n\
+\n\
+ \n\
+\n\
+Stretching\n\
+\n\
+ \n\
+\n\
+20s             RESPIRAZIONE\n\
+\n\
+20s             STRETCHING GAMBA DX\n\
+\n\
+20s             STRETCHING GAMBA SX\n\
+\n\
+20s             INCROCIO GAMBA DX\n\
+\n\
+20s             INCROCIO GAMBA SX\n\
+\n\
+20s             DISCESA FRONTALE MANI A TERRA\n\
+\n\
+20s             MOBILIZZAZIONE COLONNA\n");
    }
-   else if(scelta = 2 )
+   else if(scelta == 2 )
    {
-    printf("circuito di allenamento composto di 5 esercizi. Il peso dei manubri utilizzati varia in base al proprio grado di allenamento
-       
-        Riscaldamento
-
- 
-
-20            CIRCONDUZIONE BRACCIA IN AVANTI
-
-20             CIRCONDUZIONE BRACCIA INDIETRO
-
-20            INCROCIO BRACCIA GAMBE
-
-20            SKIP ALTO
-
-             CALCIATA AI GLUTEI LENTA
-
-20            SPOSTAMENTO LATERALE DX
-
-20             SPOSTAMENTO LATERALE SX
-
-20             JUMPING JACK
-
-20            SLANCIO ALTERNATO GAMBA DX SX
-
-Allenamento
-
-4X12            SQUAT CON KETTLEBALL
-
-3X16            AFFONDI CON MANUBRI
-
-4X10            HIP THRUST
-
-3X15            HYPEREXTENSIONS
-
-4X8             HACK SQUAT
-
-Stretching
-
- 
-
-20             RESPIRAZIONE
-
-20             STRETCHING GAMBA DX
-
-20             STRETCHING GAMBA SX
-
-20             INCROCIO GAMBA DX
-
-20             INCROCIO GAMBA SX
-
-20             DISCESA FRONTALE MANI A TERRA
-
-20             MOBILIZZAZIONE COLONNA\n");
+    printf("circuito di allenamento composto di 5 esercizi. Il peso dei manubri utilizzati varia in base al proprio grado di allenamento.\n\
+    Riscaldamento\n\
+\n\
+\n\
+\n\
+20s             CIRCONDUZIONE BRACCIA IN AVANTI\n\
+\n\
+20s             CIRCONDUZIONE BRACCIA INDIETRO\n\
+\n\
+20s             INCROCIO BRACCIA GAMBE\n\
+\n\
+20s             SKIP ALTO\n\
+\n\
+20s             CALCIATA AI GLUTEI LENTA\n\
+\n\
+20s             SPOSTAMENTO LATERALE DX\n\
+\n\
+20s             SPOSTAMENTO LATERALE SX\n\
+\n\
+20s             JUMPING JACK\n\
+\n\
+20s             SLANCIO ALTERNATO GAMBA DX SX\n\
+\n\
+ \n\
+\n\
+\n\
+ESERCIZI\n\
+\n\
+4x10           SQUAT CON KETTLEBALL\n\
+\n\
+4X12           AFFONDI CAMMINATI CON MANUBRI\n\
+\n\
+4X10          HIP THRUST\n\
+\n\
+3X15          HYPEREXTENSIONS\n\
+\n\
+3X8           HACK SQUAT\n\
+\n\
+STRETCHING\n\
+\n\
+ \n\
+\n\
+20s             RESPIRAZIONE\n\
+\n\
+20s             STRETCHING GAMBA DX\n\
+\n\
+20s             STRETCHING GAMBA SX\n\
+\n\
+20s             INCROCIO GAMBA DX\n\
+\n\
+20s             INCROCIO GAMBA SX\n\
+\n\
+20s             DISCESA FRONTALE MANI A TERRA\n\
+\n\
+20s             MOBILIZZAZIONE COLONNA\n");
    }
-   else if(scelta = 3 )
+   else if(scelta == 3 )
    {
-    printf("Il circuito contiene alcuni esercizi di yoga che possono aiutarti ad aumentare la tua flessibilita 
-    
-    
-    Riscaldamento
+    printf("Il circuito contiene alcuni esercizi di yoga che possono aiutarti ad aumentare la tua flessibilita.\n\
+\n\
+Esercizio  Nr. 1 - Il gatto (marjariasana)\n\
+\n\
+Esercizio Nr. 2 - Il cucciolo disteso (uttana shishosana, anahatasana)\n\
+\n\
+Esercizio Nr. 3 - Il cane a testa in giù (adho mukha svanasana)\n\
+\n\
+Esercizio Nr. 4 - Piegamenti in avanti (pada hastasana)\n\
+\n\
+Esercizio Nr. 5 - La montagna (tadasana)\n\
+\n\
+Esercizio Nr. 6 - La sedia (utkatasana)\n\
+\n\
+Esercizio Nr. 7 - Il rilassamento profondo\n\
+    \n");
+  }
 
-20             CIRCONDUZIONE BRACCIA IN AVANTI
+   }
 
-20             CIRCONDUZIONE BRACCIA INDIETRO
-
-20             INCROCIO BRACCIA GAMBE
-
-20             SKIP ALTO
-
-20             CALCIATA AI GLUTEI LENTA
-
-20             SPOSTAMENTO LATERALE DX
-
-20             SPOSTAMENTO LATERALE SX
-
-20             JUMPING JACK
-
-20             SLANCIO ALTERNATO GAMBA DX SX
- Allenamento
-
-
-
- Esercizio di yoga Nr. 1 - Il gatto (marjariasana)
-
-Esercizio di yoga Nr. 2 - Il cucciolo disteso (uttana shishosana, anahatasana)
-
-Esercizio di yoga Nr. 3 - Il cane a testa in giù (adho mukha svanasana)
-
-Esercizio di yoga Nr. 4 - Piegamenti in avanti (pada hastasana)
-
-Esercizio di yoga Nr. 5 - La montagna (tadasana)
-
-Esercizio di yoga Nr. 6 - La sedia (utkatasana)
-
-Esercizio di yoga Nr. 7 - Il rilassamento profondo
-
-
-
-Stretching
-
- 
-
-20             RESPIRAZIONE
-
-20             STRETCHING GAMBA DX
-
-20             STRETCHING GAMBA SX
-
-20             INCROCIO GAMBA DX
-
-20             INCROCIO GAMBA SX
-
-20             DISCESA FRONTALE MANI A TERRA
-
-20             MOBILIZZAZIONE COLONNA\n");
-}
-
-
-void consigli(float peso) 
+    void consigli(float peso) 
 {
     printf("Poiché hai un peso superiore a 100 kg, ti consigliamo di consultare un medico prima di iniziare qualsiasi programma di allenamento.\n");
 }
-   }
